@@ -1,0 +1,23 @@
+<p>indisplay works!</p>
+
+<label for="bookname">Book name: </label>
+<input id="bookname" [(ngModel)]="book1.bookname" placeholder="bookname">
+
+<label for="id">ID: </label>
+<input id="id" [(ngModel)]="book1.id" placeholder="id">
+<label for="author">Author</label>
+<input id="author" [(ngModel)]="book1.author" placeholder="Author name">
+<br>
+
+<table border="1">
+    <tr>
+        <th>id</th>
+        <th>Book Name</th>
+        <th>Athur</th>
+    </tr>
+    <tr>
+        <td>{{book1.id}}</td>
+        <td>{{book1.bookname}}</td>
+        <td>{{book1.author}}</td>
+    </tr>
+</table>
